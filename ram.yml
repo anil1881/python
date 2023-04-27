@@ -1,0 +1,10 @@
+---
+- hosts: dev
+  become: yes
+  remote user: ansible
+  tasks:
+  - name: installation of java
+    apt:  name=openjdk-11-jre-headless state=present
+
+
+
